@@ -14,12 +14,11 @@ Output:
 */
 
 function printPattern(n) {
-  for (let i = n; i > 0; i--) {
+  for (let i = 1; i <= n; i++) {
     let line = "";
-    for (let j = 1; j <= i; j++) {
+    for (let j = 0; j < n - i + 1; j++) {
       line += "* ";
     }
-
     console.log(line.trim());
   }
 }
